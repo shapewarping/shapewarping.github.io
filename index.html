@@ -56,7 +56,7 @@
               <span class="author-block">
                 <a href="https://ondrejbiza.com" target="_blank">Ondrej Biza</a><sup>1</sup>,</span>
               <span class="author-block">
-                Skye Thompson<sup>2</sup>,</span>
+                <a href="https://openreview.net/profile?id=~Skye_Thompson1" target="_blank">Skye Thompson</a><sup>2</sup>,</span>
               <span class="author-block">
                 <a href="https://www.linkedin.com/in/kishore005" target="_blank">Kishore Reddy Pagidi</a><sup>1</sup>,</span>
               <span class="author-block">
@@ -76,7 +76,7 @@
             </div>
 
             <div class="is-size-5 publication-authors">
-              <span class="author-block"><sup>1</sup>Northeastern University, <sup>2</sup>Brown University, <sup>3</sup>Microsoft Research<br> <sup>4</sup>Google DeepMind, <sup>5</sup>University of Amsterdam<br>
+              <span class="author-block"><sup>1</sup>Northeastern University, <sup>2</sup>Brown University, <sup>3</sup>Microsoft Research,<br> <sup>4</sup>Google DeepMind, <sup>5</sup>University of Amsterdam<br>
                 <!-- <sup>1</sup><img src="static/images/nu_logo.png" height="200" width="200" />
                 <sup>2</sup><img src="static/images/google_logo.png" height="200" width="200" /><br> -->
                 CoRL 2023</span>
@@ -142,7 +142,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Automatically discovering composable abstractions from raw perceptual data is a long-standing challenge in machine learning. Recent slot-based neural networks that learn about objects in a self-supervised manner have made exciting progress in this direction. However, they typically fall short at adequately capturing spatial symmetries present in the visual world, which leads to sample inefficiency, such as when entangling object appearance and pose. In this paper, we present a simple yet highly effective method for incorporating spatial symmetries via slot-centric reference frames. We incorporate equivariance to per-object pose transformations into the attention and generation mechanism of Slot Attention by translating, scaling, and rotating position encodings. These changes result in little computational overhead, are easy to implement, and can result in large gains in terms of data efficiency and overall improvements to object discovery. We evaluate our method on a wide range of synthetic object discovery benchmarks namely CLEVR, Tetrominoes, CLEVRTex, Objects Room and MultiShapeNet, and show promising improvements on the challenging real-world Waymo Open dataset. 
+            Imitation learning of robot policies from few demonstrations is crucial in open-ended applications. We propose a new method, Interaction Warping, for learning SE(3) robotic manipulation policies from a single demonstration. We infer the 3D mesh of each object in the environment using shape warping, a technique for aligning point clouds across object instances. Then, we represent manipulation actions as keypoints on objects, which can be warped with the shape of the object. We show successful one-shot imitation learning on three simulated and real-world object re-arrangement tasks. We also demonstrate the ability of our method to predict object meshes and robot grasps in the wild.
           </p>
         </div>
       </div>
@@ -189,16 +189,19 @@
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre>
-<code>@inproceedings{biza23invariant,
+<code>@inproceedings{biza23oneshot,
   author       = {Ondrej Biza and
-                  Sjoerd van Steenkiste and
-                  Mehdi S. M. Sajjadi and
-                  Gamaleldin F. Elsayed and
-                  Aravindh Mahendran and
-                  Thomas Kipf},
-  title        = {Invariant Slot Attention: Object Discovery with Slot-Centric Reference
-                  Frames},
-  booktitle    = {ICML},
+                  Skye Thompson and
+                  Kishore Reddy Pagidi and
+                  Abhinav Kumar and
+                  Elise van der Pol and
+                  Robin Walters and
+                  Thomas Kipf and
+                  Jan{-}Willem van de Meent and
+                  Lawson L. S. Wong and
+                  Robert Platt},
+  title        = {One-shot Imitation Learning via Interaction Warping},
+  booktitle    = {CoRL},
   year         = {2023}
 }</code></pre>
     </div>
